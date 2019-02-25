@@ -4,11 +4,15 @@
 		changeTextColor.style.color = "red";
 	}
 
-
-var keywords = document.querySelector('#keywords');
-keywords.addEventListener('click', function(event){
-	var target = event.target;
-	var regex = new RegExp('('+target.textContent+')', 'ig');
-	text = text.replace(regex, '<span class="highlight">$1</span>');
-	keywords.innerHTML = text;
-}, false);
+	function blueText() {
+		document.getElementById("meow").style.color = "yellow";
+	}
+	function blackText() {
+		document.getElementById("meow").style.color = "black";
+	}
+	function highlightWord() {
+		document.getElementById("meow").style.backgroundColor = "#ddff65";
+	}
+	function unHighlightWord() {
+		document.getElementById("meow").style.backgroundColor = "white";
+	}
